@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Documentation'
+project = 'visiont3lab documentation'
 copyright = '2019, Manuel Rucci'
 author = 'Manuel Rucci'
 
