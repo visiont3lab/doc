@@ -1,5 +1,6 @@
 # Visiont3lab Sphinx documentation
 
+[Documentation available here](https://visiont3lab-documentation.readthedocs.io/en/latest/)
 
 ## Setup
 
