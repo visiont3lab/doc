@@ -1,29 +1,15 @@
 
-Simple Documentation Tutorial Visiont3lab
+Visiont3lab documentation
 ===========================================
 
-Another header
-===========================================
-
-Here is some text::
-    
-    print 'hello'
-    >> hello
-
-Guide
-^^^^^
+Contents
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
    :maxdepth: 2
    
+   tutorials 
+   projects
+   contacts
    license
-   help
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   
