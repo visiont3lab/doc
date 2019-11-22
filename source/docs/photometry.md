@@ -28,7 +28,7 @@ in this way, the correspondence of image points is known beforehand, as the posi
 
 Ideal acquisition setup                              |  Acquired images
 :---------------------------------------------------:|:---------------------------------------------------:
-<img src="assets/photometry/0.png" alt="drawing" height="200"/>  |  <img src="assets/photometry/1.png" alt="drawing" width="300"/>
+<img src="images/photometry/0.png" alt="drawing" height="200"/>  |  <img src="images/photometry/1.png" alt="drawing" width="300"/>
 
 </div>
 
@@ -45,7 +45,7 @@ Reference frames are shown in the following images.
 
 Polar reference frame (Tilt (&phi;) & Slant (&theta;))                              |  Cartesian reference frame
 :---------------------------------------------------:|:---------------------------------------------------:
-<img src="assets/photometry/3.png" alt="drawing" height="300"/>  |  <img src="assets/photometry/2.png" alt="drawing" width="400"/>
+<img src="images/photometry/3.png" alt="drawing" height="300"/>  |  <img src="images/photometry/2.png" alt="drawing" width="400"/>
 
 </div>
 
@@ -80,9 +80,9 @@ Here are some results:
 
 Albedo                      |  Normal map           | Curvatures
 :--------------------------:|:---------------------:|:--------------:
-<img src="assets/photometry/ball/albedo.png" alt="drawing" height="200"/>  |  <img src="assets/photometry/ball/normal_map.png" alt="drawing" width="300"/>      | <div class="column"><div class="row"> <img src="assets/photometry/ball/gauss.png" alt="drawing" width="200"/> </div><div class="row"> <img src="assets/photometry/ball/med.png" alt="drawing" width="200"/> </div></div>
-<img src="assets/photometry/box/albedo.png" alt="drawing" height="200"/>  |  <img src="assets/photometry/box/normal_map.png" alt="drawing" width="300"/>      | <div class="column"><div class="row"> <img src="assets/photometry/box/gauss.png" alt="drawing" width="200"/> </div><div class="row"> <img src="assets/photometry/box/med.png" alt="drawing" width="200"/> </div></div>
-<img src="assets/photometry/buddha/albedo.png" alt="drawing" height="200"/>  |  <img src="assets/photometry/buddha/normal_map.png" alt="drawing" width="300"/>      | <div class="column"><div class="row"> <img src="assets/photometry/buddha/gauss.png" alt="drawing" width="200"/> </div><div class="row"> <img src="assets/photometry/buddha/med.png" alt="drawing" width="200"/> </div></div>
+<img src="images/photometry/ball/albedo.png" alt="drawing" height="200"/>  |  <img src="images/photometry/ball/normal_map.png" alt="drawing" width="300"/>      | <div class="column"><div class="row"> <img src="images/photometry/ball/gauss.png" alt="drawing" width="200"/> </div><div class="row"> <img src="images/photometry/ball/med.png" alt="drawing" width="200"/> </div></div>
+<img src="images/photometry/box/albedo.png" alt="drawing" height="200"/>  |  <img src="images/photometry/box/normal_map.png" alt="drawing" width="300"/>      | <div class="column"><div class="row"> <img src="images/photometry/box/gauss.png" alt="drawing" width="200"/> </div><div class="row"> <img src="images/photometry/box/med.png" alt="drawing" width="200"/> </div></div>
+<img src="images/photometry/buddha/albedo.png" alt="drawing" height="200"/>  |  <img src="images/photometry/buddha/normal_map.png" alt="drawing" width="300"/>      | <div class="column"><div class="row"> <img src="images/photometry/buddha/gauss.png" alt="drawing" width="200"/> </div><div class="row"> <img src="images/photometry/buddha/med.png" alt="drawing" width="200"/> </div></div>
 
 </div>
 
