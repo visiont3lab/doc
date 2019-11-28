@@ -14,7 +14,7 @@ To do this we need to divide our work into two steps:
 ## Step 1) Cross Compile Opencv using docker
 
 Set your working directory. You can export it or add it to the $HOME/.bashrc
-```
+```shell
 # Create working directory
 cd $HOME && mkdir -p cross_compile_dir
 
@@ -26,14 +26,14 @@ echo "export CROSS_COMPILE_DIR=$HOME/cross_compile_dir" >> $HOME/.bashrc && sour
 ```
 
 Clone the dockcross repository
-```
+```shell
 cd $CROSS_COMPILE_DIR && 
 git https://github.com/dockcross/dockcross.git 
 ```
 
 Pull the rasberrypi3 image (dockcross/linux-armv7) and create a docker container. We are going to pull this image from docker-hub for simplicity, but it is also possible to build it using the  docker build command. We are going to also add to our container a volume that we will use to share data between the created docker container and the host computer.
 
-```
+```shell
 cd $CROSS_COMPILE_DIR && mkdir -p sharing_data &&
 docker run --name rasberry-pi3 -it -v $CROSS_COMPILE_DIR/sharing_data:/work/sharing_data dockcross/linux-armv7:latest /bin/bash
 ```
@@ -42,7 +42,7 @@ The upper command will take a couple of minute but at the end it will open a ter
 
 Now we are ready to start building opencv. Inside the host machine sharing_data folder create a file "install_opencv.sh" and copy the following content inside.
 
-```
+```shell
 # Create the file using vim
 vim install_opencv.sh
 
@@ -51,7 +51,7 @@ gedit install_opencv.sh
 ```
 
 Installation script opencv:
-```
+```bash
 #!/usr/bin/env bash
 
 set -e
@@ -116,12 +116,12 @@ make -j4
 ```
 
 Add executable permission to the file
-```
+```shell
 chmod a+x install_opencv.sh
 ```
 
 Now we go back to our docker container and we can start building opencv. The compiler will be automatically set.
-```
+```shell
 # Inside docker contaner
 cd /work/sharing_data && ./install_opencv.sh
 ```
@@ -129,7 +129,7 @@ Feel Free to modify the installation script from either the host machine or the 
 
 It will take around 15 minutes to build. Grub a cup of coffee meanwhile. 
 After the building is finished we are going to avoid docker perssion problem by typing the following command from inside the container.
-```
+```shell
 cd /work/sharing_data &&
 chmod -R 777 lib/
 ```
