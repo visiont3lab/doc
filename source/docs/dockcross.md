@@ -25,8 +25,6 @@ export CROSS_COMPILE_DIR=$HOME/cross_compile_dir
 echo "export CROSS_COMPILE_DIR=$HOME/cross_compile_dir" >> $HOME/.bashrc && source $HOME/.bashrc
 ```
 
-```
-
 Clone the dockcross repository
 ```
 cd $CROSS_COMPILE_DIR && 
