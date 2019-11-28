@@ -3,6 +3,7 @@
 
 Woodham's algorithm for photometric stereo implemented in Python with OpenCV and numpy.  
 
+
 ## Contents
 
 - [Python Photometric Stereo](#python-photometric-stereo)
@@ -24,13 +25,9 @@ These techniques require some knowledge of the correspondence between picture el
 The idea of photometric stereo is to vary the direction of incident illumination between successive images, while the viewing direction is constant;
 in this way, the correspondence of image points is known beforehand, as the position of the object is not changed, and surface orientation is determined by using the radiance values recorded with the diﬀerent images.
 
-<div>
+![Ideal acquisition setup](images/photometry/1.png) 
+![Acquired images](images/photometry/2.png)
 
-Ideal acquisition setup                              |  Acquired images
-:---------------------------------------------------:|:---------------------------------------------------:
-<img src="images/photometry/0.png" alt="drawing" height="200"/>  |  <img src="images/photometry/1.png" alt="drawing" width="300"/>
-
-</div>
 
 Photometric stereo has several applications: it is used to detect small surface defects, imperceptible to the human eye; it has also medical applications, i.e. to detect skin lesions and help in the diagnosis of melanoma.
 More recently, it has been used also to perform a non-invasive 3D scan of surfaces, and as a cheap method to get a real-time facial motion capture, widely used in computer graphics applications.

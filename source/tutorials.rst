@@ -10,5 +10,7 @@ Tutorials
    docs/deep_learning_setup_guide
    docs/photometry
    docs/docker_with_ros.md
+   docs/dockcross.md
+    
     
    
